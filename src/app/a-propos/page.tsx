@@ -50,14 +50,14 @@ export default function AProposPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="/images/Poudre-de-moringa-scaled.jpg"
+                src="/images/Poudre-de-moringa-scaled.webp"
                 alt="Moringa Fabiram"
                 width={300}
                 height={400}
                 className="rounded-2xl shadow-lg w-full object-cover aspect-[3/4]"
               />
               <Image
-                src="/images/Poudre-de-gingembre-scaled.jpg"
+                src="/images/Poudre-de-gingembre-scaled.webp"
                 alt="Gingembre Fabiram"
                 width={300}
                 height={400}
@@ -140,11 +140,11 @@ export default function AProposPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {[
-              { src: "/images/Poudre-de-baobab-scaled.jpg", name: "Bouye (Baobab)" },
-              { src: "/images/Poudre-de-bissap-rouge-scaled.jpg", name: "Bissap Rouge" },
-              { src: "/images/Poudre-de-bissap-blanc-scaled.jpg", name: "Bissap Blanc" },
-              { src: "/images/Poudre-de-gingembre-scaled.jpg", name: "Gingembre" },
-              { src: "/images/Poudre-de-moringa-scaled.jpg", name: "Moringa" },
+              { src: "/images/Poudre-de-baobab-scaled.webp", name: "Bouye (Baobab)" },
+              { src: "/images/Poudre-de-bissap-rouge-scaled.webp", name: "Bissap Rouge" },
+              { src: "/images/Poudre-de-bissap-blanc-scaled.webp", name: "Bissap Blanc" },
+              { src: "/images/Poudre-de-gingembre-scaled.webp", name: "Gingembre" },
+              { src: "/images/Poudre-de-moringa-scaled.webp", name: "Moringa" },
             ].map((product, i) => (
               <div key={i} className="text-center">
                 <div className="relative aspect-square rounded-2xl overflow-hidden mb-3">
