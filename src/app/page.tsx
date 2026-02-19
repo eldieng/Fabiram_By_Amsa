@@ -63,7 +63,7 @@ export default function Home() {
               <div className="relative w-full aspect-square max-w-lg mx-auto">
                 <div className="absolute inset-4 bg-olive/10 rounded-full" />
                 <Image
-                  src="/images/Poudre-de-moringa-scaled.jpg"
+                  src="/images/Poudre-de-moringa-scaled.webp"
                   alt="Produits Fabiram - Poudres naturelles"
                   fill
                   className="object-cover rounded-3xl shadow-2xl"
@@ -154,14 +154,14 @@ export default function Home() {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/images/Poudre-de-baobab-scaled.jpg"
+                  src="/images/Poudre-de-baobab-scaled.webp"
                   alt="Poudre de Baobab Fabiram"
                   width={300}
                   height={400}
                   className="rounded-2xl shadow-lg w-full object-cover aspect-[3/4]"
                 />
                 <Image
-                  src="/images/Poudre-de-bissap-rouge-scaled.jpg"
+                  src="/images/Poudre-de-bissap-rouge-scaled.webp"
                   alt="Bissap Rouge Fabiram"
                   width={300}
                   height={400}

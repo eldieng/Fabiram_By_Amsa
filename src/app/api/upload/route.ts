@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import sharp from "sharp";
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,8 +15,7 @@ export async function POST(request: NextRequest) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    const ext = path.extname(file.name) || ".jpg";
-    const fileName = `product-${Date.now()}${ext}`;
+    const fileName = `product-${Date.now()}.webp`;
     const uploadDir = path.join(process.cwd(), "public", "images");
 
     if (!fs.existsSync(uploadDir)) {
@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     }
 
     const filePath = path.join(uploadDir, fileName);
-    fs.writeFileSync(filePath, buffer);
+    await sharp(buffer).webp({ quality: 80 }).toFile(filePath);
 
     return NextResponse.json({ url: `/images/${fileName}` });
   } catch {

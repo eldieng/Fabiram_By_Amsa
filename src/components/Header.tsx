@@ -46,10 +46,10 @@ export default function Header() {
         <div className="container-custom px-4 md:px-8 flex items-center justify-between">
           <span>Bienvenue chez Fabiram — Poudres 100% Naturelles du Sénégal</span>
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1">
+            <a href="tel:+221772958443" className="flex items-center gap-1 hover:text-accent transition-colors">
               <Phone size={12} />
-              +221 XX XXX XX XX
-            </span>
+              +221 77 295 84 43
+            </a>
             <Link href="/admin" className="hover:text-accent flex items-center gap-1">
               <User size={12} />
               Admin

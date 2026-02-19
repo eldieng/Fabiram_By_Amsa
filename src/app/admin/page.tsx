@@ -27,7 +27,7 @@ import {
 import { formatPrice } from "@/lib/cart";
 import Link from "next/link";
 
-const ADMIN_PASSWORD = "fabiram2024";
+const ADMIN_PASSWORD = "Fabirambyamsa";
 
 export default function AdminPage() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
