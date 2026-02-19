@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #FBF7F0;
+  --foreground: #3E2723;
 }
 
 body {
@@ -23,5 +16,38 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-olive text-white px-7 py-3.5 rounded-full font-semibold hover:bg-olive-dark transition-all duration-300 inline-flex items-center gap-2 shadow-md hover:shadow-lg;
+  }
+  .btn-secondary {
+    @apply bg-secondary text-white px-7 py-3.5 rounded-full font-semibold hover:bg-secondary-dark transition-all duration-300 inline-flex items-center gap-2;
+  }
+  .btn-outline {
+    @apply border-2 border-olive text-olive px-7 py-3.5 rounded-full font-semibold hover:bg-olive hover:text-white transition-all duration-300 inline-flex items-center gap-2;
+  }
+  .btn-accent {
+    @apply bg-accent text-white px-7 py-3.5 rounded-full font-semibold hover:bg-accent-dark transition-all duration-300 inline-flex items-center gap-2 shadow-md;
+  }
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  .organic-shape {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  .leaf-divider {
+    @apply w-full h-px bg-gradient-to-r from-transparent via-olive/30 to-transparent my-8;
   }
 }

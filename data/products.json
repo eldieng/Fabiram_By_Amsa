@@ -1,0 +1,132 @@
+[
+  {
+    "id": "bouye-baobab",
+    "name": "Bouye",
+    "subtitle": "Pulpe de Baobab en poudre",
+    "description": "Poudre de baobab 100% naturelle, riche en vitamine C et en fibres. Idéale pour vos boissons et smoothies.",
+    "longDescription": "Notre poudre de Bouye est extraite de la pulpe du fruit du baobab, un arbre emblématique de l'Afrique. Riche en vitamine C, en calcium et en fibres, cette poudre est un superaliment naturel utilisé depuis des siècles au Sénégal. Son goût acidulé et rafraîchissant en fait un ingrédient parfait pour vos jus, smoothies et desserts.",
+    "benefits": [
+      "Riche en vitamine C (6x plus que l'orange)",
+      "Source naturelle de calcium",
+      "Haute teneur en fibres",
+      "Antioxydant puissant",
+      "Renforce le système immunitaire"
+    ],
+    "usage": "Mélangez 2 à 3 cuillères à soupe dans un verre d'eau froide. Sucrez selon votre goût. Peut aussi être ajouté aux smoothies, yaourts et pâtisseries.",
+    "price": 3500,
+    "weight": "400g",
+    "image": "/images/product-1770328536486.jpg",
+    "category": "Superaliments",
+    "badge": "Produit Naturel",
+    "inStock": true,
+    "variants": [
+      { "weight": "200g", "price": 2000 },
+      { "weight": "400g", "price": 3500 },
+      { "weight": "1kg", "price": 8000 }
+    ]
+  },
+  {
+    "id": "bissap-rouge",
+    "name": "Bissap Rouge",
+    "subtitle": "Poudre d'Hibiscus - Menthe Citronnelle",
+    "description": "Poudre de bissap rouge (hibiscus) aromatisée à la menthe et citronnelle. Boisson rafraîchissante par excellence.",
+    "longDescription": "Notre Bissap Rouge est une poudre d'hibiscus soigneusement sélectionnée et aromatisée à la menthe et à la citronnelle. Le bissap est la boisson nationale du Sénégal, appréciée pour sa couleur rouge vif et son goût unique. Cette version en poudre vous permet de préparer facilement cette boisson traditionnelle chez vous.",
+    "benefits": [
+      "Riche en antioxydants",
+      "Aide à réguler la tension artérielle",
+      "Favorise la digestion",
+      "Effet rafraîchissant naturel",
+      "Source de vitamine C"
+    ],
+    "usage": "Diluez 2 cuillères à soupe dans un litre d'eau froide ou chaude. Sucrez à votre convenance. Servez frais avec des glaçons pour une boisson rafraîchissante.",
+    "price": 2500,
+    "weight": "250g",
+    "image": "/images/Poudre-de-bissap-rouge-scaled.jpg",
+    "category": "Boissons",
+    "badge": "Produit Naturel",
+    "inStock": true,
+    "variants": [
+      { "weight": "100g", "price": 1500 },
+      { "weight": "250g", "price": 2500 },
+      { "weight": "500g", "price": 4500 }
+    ]
+  },
+  {
+    "id": "bissap-blanc",
+    "name": "Bissap Blanc",
+    "subtitle": "Poudre d'Hibiscus Blanc",
+    "description": "Poudre de bissap blanc, une variante douce et délicate de l'hibiscus traditionnel.",
+    "longDescription": "Le Bissap Blanc est une variété rare et délicate d'hibiscus. Moins connu que son cousin rouge, il offre un goût plus doux et subtil. Cette poudre est parfaite pour ceux qui recherchent une boisson naturelle avec une saveur plus légère.",
+    "benefits": [
+      "Goût doux et délicat",
+      "Propriétés apaisantes",
+      "Riche en minéraux",
+      "Favorise la relaxation",
+      "Hydratation naturelle"
+    ],
+    "usage": "Mélangez 2 cuillères à soupe dans un litre d'eau. Peut être consommé chaud ou froid. Ajoutez du miel pour plus de douceur.",
+    "price": 2500,
+    "weight": "250g",
+    "image": "/images/Poudre-de-bissap-blanc-scaled.jpg",
+    "category": "Boissons",
+    "badge": "Produit Naturel",
+    "inStock": true,
+    "variants": [
+      { "weight": "100g", "price": 1500 },
+      { "weight": "250g", "price": 2500 },
+      { "weight": "500g", "price": 4500 }
+    ]
+  },
+  {
+    "id": "gingembre",
+    "name": "Ginger",
+    "subtitle": "Poudre de Gingembre",
+    "description": "Poudre de gingembre pure et naturelle. Un concentré d'énergie et de bienfaits pour votre santé.",
+    "longDescription": "Notre poudre de Gingembre est obtenue à partir de racines de gingembre fraîches, séchées et finement moulues. Le gingembre est reconnu mondialement pour ses propriétés anti-inflammatoires et digestives. Cette poudre concentre tous les bienfaits du gingembre frais dans un format pratique.",
+    "benefits": [
+      "Anti-inflammatoire naturel",
+      "Stimule la digestion",
+      "Renforce l'immunité",
+      "Effet énergisant",
+      "Soulage les nausées"
+    ],
+    "usage": "Ajoutez 1 cuillère à café dans vos thés, infusions, jus ou plats cuisinés. Peut être mélangé avec du miel et du citron pour une boisson santé.",
+    "price": 2000,
+    "weight": "200g",
+    "image": "/images/Poudre-de-gingembre-scaled.jpg",
+    "category": "Épices & Santé",
+    "badge": "Produit Naturel",
+    "inStock": true,
+    "variants": [
+      { "weight": "100g", "price": 1200 },
+      { "weight": "200g", "price": 2000 },
+      { "weight": "500g", "price": 4500 }
+    ]
+  },
+  {
+    "id": "moringa",
+    "name": "Moringa",
+    "subtitle": "Poudre de Moringa",
+    "description": "Poudre de feuilles de moringa, le superaliment africain par excellence. Riche en nutriments essentiels.",
+    "longDescription": "Le Moringa, surnommé « l'arbre de vie », est l'un des superaliments les plus complets au monde. Notre poudre est obtenue à partir de feuilles de moringa soigneusement récoltées et séchées à basse température pour préserver tous leurs nutriments. C'est un complément alimentaire naturel exceptionnel.",
+    "benefits": [
+      "7x plus de vitamine C que l'orange",
+      "4x plus de calcium que le lait",
+      "2x plus de protéines que le yaourt",
+      "25x plus de fer que les épinards",
+      "Riche en acides aminés essentiels"
+    ],
+    "usage": "Ajoutez 1 à 2 cuillères à café dans vos smoothies, jus, salades ou plats. Peut aussi être infusé en thé. Ne pas chauffer à haute température.",
+    "price": 2000,
+    "weight": "200g",
+    "image": "/images/Poudre-de-moringa-scaled.jpg",
+    "category": "Superaliments",
+    "badge": "Produit Naturel",
+    "inStock": true,
+    "variants": [
+      { "weight": "100g", "price": 1200 },
+      { "weight": "200g", "price": 2000 },
+      { "weight": "500g", "price": 4500 }
+    ]
+  }
+]
