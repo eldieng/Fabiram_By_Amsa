@@ -180,8 +180,8 @@ export default function AdminPage() {
     return (
       <section className="bg-cream min-h-screen">
         <div className="bg-white border-b sticky top-0 z-30">
-          <div className="container-custom px-4 md:px-8 py-4 flex items-center justify-between">
-            <h1 className="text-xl font-bold text-bark">
+          <div className="container-custom px-4 md:px-8 py-3 md:py-4 flex items-center justify-between">
+            <h1 className="text-sm md:text-xl font-bold text-bark truncate pr-2">
               {isCreating ? "Nouveau produit" : `Modifier : ${editingProduct.name}`}
             </h1>
             <button
@@ -189,15 +189,15 @@ export default function AdminPage() {
                 setEditingProduct(null);
                 setIsCreating(false);
               }}
-              className="text-gray-500 hover:text-gray-700 p-2"
+              className="text-gray-500 hover:text-gray-700 p-2 shrink-0"
             >
               <X size={20} />
             </button>
           </div>
         </div>
 
-        <div className="container-custom px-4 md:px-8 py-8">
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm max-w-3xl mx-auto">
+        <div className="container-custom px-4 md:px-8 py-4 md:py-8">
+          <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-8 shadow-sm max-w-3xl mx-auto">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -210,9 +210,9 @@ export default function AdminPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Photo du produit
                 </label>
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
                   {/* Preview */}
-                  <div className="relative w-32 h-32 rounded-2xl overflow-hidden bg-sand border-2 border-dashed border-gray-300 shrink-0">
+                  <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-xl sm:rounded-2xl overflow-hidden bg-sand border-2 border-dashed border-gray-300 shrink-0">
                     {editingProduct.image ? (
                       <Image
                         src={editingProduct.image}
@@ -509,7 +509,17 @@ export default function AdminPage() {
                 </label>
               </div>
 
-              <div className="flex gap-3 pt-4 border-t">
+              <div className="flex flex-col-reverse sm:flex-row gap-3 pt-4 border-t">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setEditingProduct(null);
+                    setIsCreating(false);
+                  }}
+                  className="btn-outline w-full sm:w-auto justify-center"
+                >
+                  Annuler
+                </button>
                 <button
                   type="submit"
                   disabled={saving}
@@ -521,16 +531,6 @@ export default function AdminPage() {
                     <Save size={16} />
                   )}
                   {isCreating ? "Créer le produit" : "Enregistrer"}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setEditingProduct(null);
-                    setIsCreating(false);
-                  }}
-                  className="btn-outline"
-                >
-                  Annuler
                 </button>
               </div>
             </form>
@@ -545,54 +545,54 @@ export default function AdminPage() {
     <section className="bg-cream min-h-screen">
       {/* Admin Header */}
       <div className="bg-white border-b sticky top-0 z-30">
-        <div className="container-custom px-4 md:px-8 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+        <div className="container-custom px-4 md:px-8 py-3 md:py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2 md:gap-3">
             <Package size={20} className="text-olive" />
-            <h1 className="text-xl font-bold text-bark">
-              Administration Fabiram
+            <h1 className="text-base md:text-xl font-bold text-bark">
+              Admin Fabiram
             </h1>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-3">
             <Link
               href="/"
-              className="text-sm text-gray-500 hover:text-olive flex items-center gap-1"
+              className="text-xs md:text-sm text-gray-500 hover:text-olive flex items-center gap-1 p-2 md:p-0"
             >
               <Eye size={16} />
-              Voir le site
+              <span className="hidden sm:inline">Voir le site</span>
             </Link>
             <button
               onClick={handleLogout}
-              className="text-sm text-red-500 hover:text-red-700 flex items-center gap-1"
+              className="text-xs md:text-sm text-red-500 hover:text-red-700 flex items-center gap-1 p-2 md:p-0"
             >
               <LogOut size={16} />
-              Déconnexion
+              <span className="hidden sm:inline">Déconnexion</span>
             </button>
           </div>
         </div>
       </div>
 
-      <div className="container-custom px-4 md:px-8 py-8">
+      <div className="container-custom px-4 md:px-8 py-6 md:py-8">
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <div className="bg-white p-5 rounded-2xl shadow-sm border border-sand">
-            <p className="text-sm text-gray-500">Produits</p>
-            <p className="text-2xl font-bold text-bark">{products.length}</p>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8">
+          <div className="bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-sm border border-sand">
+            <p className="text-xs md:text-sm text-gray-500">Produits</p>
+            <p className="text-xl md:text-2xl font-bold text-bark">{products.length}</p>
           </div>
-          <div className="bg-white p-5 rounded-2xl shadow-sm border border-sand">
-            <p className="text-sm text-gray-500">En stock</p>
-            <p className="text-2xl font-bold text-olive">
+          <div className="bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-sm border border-sand">
+            <p className="text-xs md:text-sm text-gray-500">En stock</p>
+            <p className="text-xl md:text-2xl font-bold text-olive">
               {products.filter((p) => p.inStock).length}
             </p>
           </div>
-          <div className="bg-white p-5 rounded-2xl shadow-sm border border-sand">
-            <p className="text-sm text-gray-500">Catégories</p>
-            <p className="text-2xl font-bold text-bark">
+          <div className="bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-sm border border-sand">
+            <p className="text-xs md:text-sm text-gray-500">Catégories</p>
+            <p className="text-xl md:text-2xl font-bold text-bark">
               {new Set(products.map((p) => p.category)).size}
             </p>
           </div>
-          <div className="bg-white p-5 rounded-2xl shadow-sm border border-sand">
-            <p className="text-sm text-gray-500">Prix moyen</p>
-            <p className="text-2xl font-bold text-secondary">
+          <div className="bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-sm border border-sand">
+            <p className="text-xs md:text-sm text-gray-500">Prix moyen</p>
+            <p className="text-xl md:text-2xl font-bold text-secondary">
               {products.length > 0
                 ? formatPrice(
                     Math.round(
@@ -606,14 +606,74 @@ export default function AdminPage() {
 
         {/* Actions */}
         <div className="flex flex-wrap gap-3 mb-6">
-          <button onClick={handleNewProduct} className="btn-primary">
+          <button onClick={handleNewProduct} className="btn-primary w-full sm:w-auto justify-center">
             <Plus size={16} />
             Nouveau produit
           </button>
         </div>
 
-        {/* Products Table */}
-        <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-sand">
+        {/* Mobile: Product Cards */}
+        <div className="md:hidden space-y-3">
+          {products.map((product) => (
+            <div key={product.id} className="bg-white rounded-xl shadow-sm border border-sand p-4">
+              <div className="flex items-start gap-3">
+                <div className="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-sand">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-start justify-between gap-2">
+                    <div>
+                      <p className="font-semibold text-bark text-sm truncate">{product.name}</p>
+                      <p className="text-xs text-gray-500 truncate">{product.subtitle}</p>
+                    </div>
+                    <span
+                      className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${
+                        product.inStock
+                          ? "bg-green-100 text-green-700"
+                          : "bg-red-100 text-red-700"
+                      }`}
+                    >
+                      {product.inStock ? "En stock" : "Rupture"}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3 mt-2">
+                    <span className="font-bold text-secondary text-sm">
+                      {formatPrice(product.price)}
+                    </span>
+                    <span className="text-xs text-gray-400">{product.weight}</span>
+                    <span className="text-xs text-olive bg-olive/10 px-2 py-0.5 rounded-full">
+                      {product.category}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 mt-3 pt-3 border-t border-sand">
+                <button
+                  onClick={() => setEditingProduct({ ...product })}
+                  className="flex-1 text-olive bg-olive/10 hover:bg-olive/20 py-2 rounded-lg transition-colors text-sm font-medium flex items-center justify-center gap-1.5"
+                >
+                  <Pencil size={14} />
+                  Modifier
+                </button>
+                <button
+                  onClick={() => handleDeleteProduct(product.id)}
+                  className="text-red-400 hover:text-red-600 p-2 hover:bg-red-50 rounded-lg transition-colors"
+                  title="Supprimer"
+                >
+                  <Trash2 size={16} />
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop: Products Table */}
+        <div className="hidden md:block bg-white rounded-2xl shadow-sm overflow-hidden border border-sand">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead className="bg-sand/50 border-b border-sand">
