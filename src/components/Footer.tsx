@@ -106,13 +106,17 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
                   <Phone size={14} className="text-leaf" />
                 </div>
-                <span className="text-green-200/80 text-sm">+221 77 295 84 43</span>
+                <div className="text-green-200/80 text-sm space-y-0.5">
+                  <a href="tel:+221772958443" className="block hover:text-accent transition-colors">+221 77 295 84 43</a>
+                  <a href="tel:+221761617169" className="block hover:text-accent transition-colors">+221 76 161 71 69</a>
+                  <a href="tel:+221775432218" className="block hover:text-accent transition-colors">+221 77 543 22 18</a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
                   <Mail size={14} className="text-leaf" />
                 </div>
-                <span className="text-green-200/80 text-sm">fabiramproduct@gmail.com</span>
+                <a href="mailto:fabiramproduct@gmail.com" className="text-green-200/80 text-sm hover:text-accent transition-colors">fabiramproduct@gmail.com</a>
               </li>
             </ul>
           </div>

@@ -61,11 +61,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Téléphone</h3>
-                    <p className="text-sm text-gray-600">
-                      +221 77 295 84 43<br />
-                      +221 76 161 71 69<br />
-                      +221 77 543 22 18
-                    </p>
+                    <div className="text-sm text-gray-600 space-y-1">
+                      <a href="tel:+221772958443" className="block hover:text-primary transition-colors">+221 77 295 84 43</a>
+                      <a href="tel:+221761617169" className="block hover:text-primary transition-colors">+221 76 161 71 69</a>
+                      <a href="tel:+221775432218" className="block hover:text-primary transition-colors">+221 77 543 22 18</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Email</h3>
-                    <p className="text-sm text-gray-600">fabiramproduct@gmail.com</p>
+                    <a href="mailto:fabiramproduct@gmail.com" className="text-sm text-gray-600 hover:text-primary transition-colors">fabiramproduct@gmail.com</a>
                   </div>
                 </div>
               </div>
