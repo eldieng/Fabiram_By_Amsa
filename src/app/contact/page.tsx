@@ -61,7 +61,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Téléphone</h3>
-                    <p className="text-sm text-gray-600">+221 XX XXX XX XX</p>
+                    <p className="text-sm text-gray-600">
+                      +221 77 295 84 43<br />
+                      +221 76 161 71 69<br />
+                      +221 77 543 22 18
+                    </p>
                   </div>
                 </div>
               </div>
@@ -73,7 +77,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Email</h3>
-                    <p className="text-sm text-gray-600">contact@fabiram.com</p>
+                    <p className="text-sm text-gray-600">fabiramproduct@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -90,7 +94,7 @@ export default function ContactPage() {
                       rapide
                     </p>
                     <a
-                      href="https://wa.me/"
+                      href="https://wa.me/221772958443"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-white text-green-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-50 transition-colors"

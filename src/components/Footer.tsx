@@ -27,6 +27,9 @@ export default function Footer() {
                 className="h-10 w-auto object-contain brightness-0 invert"
               />
             </div>
+            <p className="text-green-200/80 text-sm leading-relaxed mb-1 italic">
+              Saveurs locales, plaisir global
+            </p>
             <p className="text-green-200/80 text-sm leading-relaxed mb-4">
               Poudres naturelles et biologiques du Sénégal. Des superaliments
               africains pour votre bien-être quotidien.
@@ -103,13 +106,13 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
                   <Phone size={14} className="text-leaf" />
                 </div>
-                <span className="text-green-200/80 text-sm">+221 XX XXX XX XX</span>
+                <span className="text-green-200/80 text-sm">+221 77 295 84 43</span>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
                   <Mail size={14} className="text-leaf" />
                 </div>
-                <span className="text-green-200/80 text-sm">contact@fabiram.com</span>
+                <span className="text-green-200/80 text-sm">fabiramproduct@gmail.com</span>
               </li>
             </ul>
           </div>

@@ -74,8 +74,60 @@ export default function ProductPage() {
     setTimeout(() => setAdded(false), 2000);
   };
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.longDescription,
+    image: `https://fabiram.sn${product.image}`,
+    brand: {
+      "@type": "Brand",
+      name: "Fabiram",
+    },
+    category: product.category,
+    offers: product.variants && product.variants.length > 0
+      ? product.variants.map((v) => ({
+          "@type": "Offer",
+          price: v.price,
+          priceCurrency: "XOF",
+          availability: product.inStock
+            ? "https://schema.org/InStock"
+            : "https://schema.org/OutOfStock",
+          seller: { "@type": "Organization", name: "Fabiram" },
+          description: `${product.name} - ${v.weight}`,
+        }))
+      : {
+          "@type": "Offer",
+          price: product.price,
+          priceCurrency: "XOF",
+          availability: product.inStock
+            ? "https://schema.org/InStock"
+            : "https://schema.org/OutOfStock",
+          seller: { "@type": "Organization", name: "Fabiram" },
+        },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Accueil", item: "https://fabiram.sn" },
+      { "@type": "ListItem", position: 2, name: "Boutique", item: "https://fabiram.sn/boutique" },
+      { "@type": "ListItem", position: 3, name: product.name, item: `https://fabiram.sn/produit/${product.id}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       {/* Breadcrumb */}
       <div className="bg-cream py-3">
         <div className="container-custom px-4 md:px-8">
@@ -221,7 +273,7 @@ export default function ProductPage() {
                   </button>
                 </div>
                 <a
-                  href={`https://wa.me/?text=${encodeURIComponent(
+                  href={`https://wa.me/221772958443?text=${encodeURIComponent(
                     `Bonjour Fabiram ! Je souhaite commander :\n\n` +
                     `Produit : ${product.name} (${product.subtitle})\n` +
                     `Format : ${activeWeight}\n` +
