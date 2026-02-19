@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fabiram - Saveurs locales, plaisir global
 
-## Getting Started
+Boutique en ligne de poudres naturelles et biologiques du Sénégal.
 
-First, run the development server:
+## Produits
+
+- **Bouye** - Poudre de Baobab
+- **Bissap Rouge** - Poudre d'Hibiscus Menthe Citronnelle
+- **Bissap Blanc** - Poudre d'Hibiscus Blanc
+- **Gingembre** - Poudre de Gingembre
+- **Moringa** - Poudre de Moringa
+
+## Stack technique
+
+- **Framework** : Next.js 14 (App Router)
+- **UI** : React 18 + TailwindCSS
+- **Icônes** : Lucide React
+- **Backend** : API Routes Next.js + stockage JSON
+- **SEO** : Données structurées JSON-LD, sitemap dynamique, Open Graph
+
+## Fonctionnalités
+
+- Catalogue produits avec variantes (poids/prix)
+- Commande via WhatsApp (message pré-rempli)
+- Panier d'achat
+- Panel admin protégé par mot de passe
+- Upload d'images produits
+- Référencement local (Dakar, Sénégal)
+- Design responsive (mobile-first)
+
+## Lancer le projet
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Le site sera accessible sur [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Adresse** : Sicap Mbao, Dakar, Sénégal
+- **Téléphone** : +221 77 295 84 43
+- **Email** : fabiramproduct@gmail.com
+- **WhatsApp** : +221 77 295 84 43
